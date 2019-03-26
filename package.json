@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run build:live",
     "build": "tsc -p .",
-    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts"
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "lint": "tslint -c tslint.json -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "@types/node": "^11.11.8",
     "nodemon": "^1.18.10",
     "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
     "typescript": "^3.3.4000"
   },
   "dependencies": {
